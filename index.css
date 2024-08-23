@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'CursedTimerUlil-Aznm';
+  src: url('/Font/CursedTimerUlil-Aznm.ttf') format('woff2'),
+       url('/Font/CursedTimerUlil-Aznm.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;   
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #1B244A;
+    color: white;
+    font-family: verdana;
+}
+
+.section {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 640px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.score-wrapper {
+    background: #080001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.score {
+    font-family: CursedTimerUlil-Aznm;
+    font-size: 2.5rem;
+    color: lightcoral;
+}
+
+.team-container {
+    text-align: center;
+}
+
+.increment {
+    display: inline-flex;
+    font-family: CursedTimerUlil-Aznm;
+    color: white;
+    background: none;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.increment:hover {
+    background-color: white;
+    color: #1B244A;
+    transition: 200ms;
+}
+
+.increment:active {
+    background-color: whitesmoke;
+    color: #1B244AAA;
+}
+
+.narrow { 
+    padding: 0.5rem 1rem;
+}
+
+.leader {
+    color: #1d8;
+}
+
+.timer-container {
+    width: 80%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.timer-text {
+    text-align: center;
+}
+
+.actions {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Center buttons vertically */
+}
+
+.startGameBtn {
+    transition: 200ms;
+    display: inline-flex;
+    font-family: CursedTimerUlil-Aznm;
+    color: white;
+    background: none;
+    outline: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: #1B244A;
+}
+
+.startGameBtn:hover {
+    scale: 1.025;
+    color: #1B244A;
+    transition: 200ms;
+}
+
+.startGameBtn:active {
+    background-color: whitesmoke;
+    color: #1B244AAA;
+}
+
+.startGameBtn.enabled {
+    background-color: #1d8; /* Green color */
+}
+
+.increment.disabled,
+.startGameBtn.disabled {
+    color: #ccc;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.increment.enabled,
+.startGameBtn.enabled {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.startGameBtn {
+    opacity: 1; /* Ensure start button is fully opaque initially */
+}
+
+.increment {
+    opacity: 0.5; /* Ensure increment buttons are less opaque initially */
+}
