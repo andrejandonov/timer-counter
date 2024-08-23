@@ -1,41 +1,85 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="Font/CursedTimerUlil-Aznm.ttf">
-    </head>
-    <body>
-        <div class="section">
-            <div class="timer-container">
-                <h3 class="timer-text">TIMER</h3>
-                <div class="score-wrapper">
-                    <h4 class="score" id="timer">10:00</h4>
-                </div>
-            </div>
-          <div class="container">
-            <div class="team-container">
-                <h3>HOME</h3>
-                <div class="score-wrapper">
-                    <h4 class="score" id="teamOneScore">0</h4>
-                </div>
-                <button class="increment" id="teamOneIncrement1" onclick="increment(1, teamOneScore)">+1</button>
-                <button class="increment" id="teamOneIncrement2" onclick="increment(2, teamOneScore)">+2</button>
-                <button class="increment" id="teamOneIncrement3" onclick="increment(3, teamOneScore)">+3</button>
-            </div>
-            <div class="team-container">
-                <h3>GUEST</h3>
-                <div class="score-wrapper">
-                    <h4 class="score" id="teamTwoScore">0</h4>
-                </div>
-                <button class="increment" id="teamTwoIncrement1" onclick="increment(1, teamTwoScore)">+1</button>
-                <button class="increment" id="teamTwoIncrement2" onclick="increment(2, teamTwoScore)">+2</button>
-                <button class="increment" id="teamTwoIncrement3" onclick="increment(3, teamTwoScore)">+3</button>
-              </div>
-            </div>
-            <div class="actions">
-                <button class="increment narrow" id="resetBtn" onclick="reset()">New Game</button>
-                <button class="narrow startGameBtn" id="startGameBtn" onclick="startGame()">Start Game</button>
-            </div>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="Font/CursedTimerUlil-Aznm.ttf" />
+  </head>
+  <body>
+    <div class="section">
+      <div class="timer-container">
+        <h3 class="timer-text">TIMER</h3>
+        <div class="score-wrapper">
+          <h4 class="score" id="timer">10:00</h4>
         </div>
-        <script src="index.js"></script>
-    </body>
+      </div>
+      <div class="container">
+        <div class="team-container">
+          <h3>HOME</h3>
+          <div class="score-wrapper">
+            <h4 class="score" id="teamOneScore">0</h4>
+          </div>
+          <button
+            class="increment"
+            id="teamOneIncrement1"
+            onclick="increment(1, teamOneScore)"
+          >
+            +1
+          </button>
+          <button
+            class="increment"
+            id="teamOneIncrement2"
+            onclick="increment(2, teamOneScore)"
+          >
+            +2
+          </button>
+          <button
+            class="increment"
+            id="teamOneIncrement3"
+            onclick="increment(3, teamOneScore)"
+          >
+            +3
+          </button>
+        </div>
+        <div class="team-container">
+          <h3>AWAY</h3>
+          <div class="score-wrapper">
+            <h4 class="score" id="teamTwoScore">0</h4>
+          </div>
+          <button
+            class="increment"
+            id="teamTwoIncrement1"
+            onclick="increment(1, teamTwoScore)"
+          >
+            +1
+          </button>
+          <button
+            class="increment"
+            id="teamTwoIncrement2"
+            onclick="increment(2, teamTwoScore)"
+          >
+            +2
+          </button>
+          <button
+            class="increment"
+            id="teamTwoIncrement3"
+            onclick="increment(3, teamTwoScore)"
+          >
+            +3
+          </button>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="increment narrow" id="resetBtn" onclick="reset()">
+          New Game
+        </button>
+        <button
+          class="narrow startGameBtn"
+          id="startGameBtn"
+          onclick="startGame()"
+        >
+          Start Game
+        </button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
